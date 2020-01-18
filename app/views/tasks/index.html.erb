@@ -1,0 +1,22 @@
+<h1>My Tasks</h1>
+
+
+  <% @tasks.each do |task| %>
+  <% if task.completed? %>
+  <p><i class="far fa-check-square"></i> <%= task.title %></p>
+  <% else %>
+  <p><i class="far fa-square"></i> <%= task.title %></p>
+  <% end %>
+  <% end %>
+
+
+
+
+
+<!--
+<form>
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+<input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat<br>
+</form> -->
+

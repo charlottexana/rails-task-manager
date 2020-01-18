@@ -1,0 +1,15 @@
+<h1>Your chosen task</h1>
+
+<h3><%= Task.find(params[:id]).title  %></h3>
+<p><%= Task.find(params[:id]).details  %></p>
+
+  <% if Task.find(params[:id]).completed == true %>
+  <p><i class="far fa-check-square"></i> This task is completed!</p>
+  <% else %>
+  <p><i class="far fa-square"></i> This task is not completed! </p>
+  <% end %>
+
+
+
+
+
